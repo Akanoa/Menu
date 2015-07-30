@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    hashed_password VARCHAR(40) NOT NULL,
+    society VARCHAR(255) DEFAULT "ovh",
+    BP VARCHAR(5) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    administrator SMALLINT DEFAULT 0
+);
