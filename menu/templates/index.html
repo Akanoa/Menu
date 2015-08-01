@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" style="margin-top:50px">
+    <div class="hero-unit">
+        <div id="content">
+            <h1>{ content.name }</h1>
+            <ul>
+                <li rv-each-todo="content.list" rv-show="todo.valide">{ todo.name }</li>
+            </ul>
+        </div>        
+    </div>
+</div>
+{% endblock %}
